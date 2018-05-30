@@ -11,10 +11,7 @@ public class FaceController {
 	
     @GetMapping("/face")
     public String faceQuestion(Map<String, Object> model) {
-        model.put("faceQuestion", new Face().questionFace());
-        model.put("faceCry", new Face().cryFace());
         model.put("faceSmile", new Face().smileFace());
-        model.put("chicken", new Face().chicken());
         return "face";
     }
 
