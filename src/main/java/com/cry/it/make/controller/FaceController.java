@@ -9,11 +9,21 @@ import java.util.Map;
 @Controller
 public class FaceController {
 
-    @GetMapping("/face")
-    public String face(Map<String, Object> model) {
+    @GetMapping("/faceQuestion")
+    public String faceQuestion(Map<String, Object> model) {
         model.put("faceQuestion", new Face().questionFace());
+        return "faceQuestion";
+    }
+    
+    @GetMapping("/faceCry")
+    public String faceCry(Map<String, Object> model) {
         model.put("faceCry", new Face().cryFace());
+        return "faceCry";
+    }
+    
+    @GetMapping("/faceSmile")
+    public String faceSmile(Map<String, Object> model) {
         model.put("faceSmile", new Face().smileFace());
-        return "face";
+        return "faceSmile";
     }
 }
