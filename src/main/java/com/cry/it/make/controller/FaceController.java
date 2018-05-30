@@ -8,22 +8,14 @@ import java.util.Map;
 
 @Controller
 public class FaceController {
-
-    @GetMapping("/faceQuestion")
+	
+    @GetMapping("/face")
     public String faceQuestion(Map<String, Object> model) {
-        model.put("face", new Face().questionFace());
+        model.put("faceQuestion", new Face().questionFace());
+        model.put("faceCry", new Face().cryFace());
+        model.put("faceSmile", new Face().smileFace());
+        model.put("chicken", new Face().chicken());
         return "face";
     }
-    
-    @GetMapping("/faceCry")
-    public String faceCry(Map<String, Object> model) {
-        model.put("face", new Face().cryFace());
-        return "face";
-    }
-    
-    @GetMapping("/faceSmile")
-    public String faceSmile(Map<String, Object> model) {
-        model.put("face", new Face().smileFace());
-        return "face";
-    }
+
 }

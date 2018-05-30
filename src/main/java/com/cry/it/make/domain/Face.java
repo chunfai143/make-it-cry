@@ -17,4 +17,8 @@ public class Face {
     public String questionFace() {
     	return "question";
     }
+    
+    public String chicken() {
+    	return "chicken";
+    }
 }
