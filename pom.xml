@@ -5,13 +5,13 @@
 	http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>user29</groupId>
+    <groupId>user8</groupId>
     <artifactId>make-it-cry</artifactId>
     <name>make-it-cry</name>
 
     <packaging>war</packaging>
     <description>Just make it cry</description>
-    <version>1.0.0</version>
+    <version>1.0.12</version>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
