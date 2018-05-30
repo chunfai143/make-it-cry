@@ -11,19 +11,19 @@ public class FaceController {
 
     @GetMapping("/faceQuestion")
     public String faceQuestion(Map<String, Object> model) {
-        model.put("faceQuestion", new Face().questionFace());
-        return "faceQuestion";
+        model.put("face", new Face().questionFace());
+        return "face";
     }
     
     @GetMapping("/faceCry")
     public String faceCry(Map<String, Object> model) {
-        model.put("faceCry", new Face().cryFace());
-        return "faceCry";
+        model.put("face", new Face().cryFace());
+        return "face";
     }
     
     @GetMapping("/faceSmile")
     public String faceSmile(Map<String, Object> model) {
-        model.put("faceSmile", new Face().smileFace());
-        return "faceSmile";
+        model.put("face", new Face().smileFace());
+        return "face";
     }
 }
